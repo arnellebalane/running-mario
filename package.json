@@ -1,0 +1,19 @@
+{
+  "name": "running-mario",
+  "version": "0.0.0",
+  "description": "css running mario experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnelle Balane <arnellebalane@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.19",
+    "babel-core": "^5.8.19",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.0.5"
+  }
+}
