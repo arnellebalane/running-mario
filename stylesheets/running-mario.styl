@@ -1,3 +1,4 @@
+@import "configuration"
 @import "utils"
 
 
@@ -18,3 +19,41 @@ body
     display flex
     align-items center
     justify-content center
+
+
+.mario
+    width pixel-size
+    height pixel-size
+    background-color color-blue
+    box-shadow pixelrow(0, -3..2, color-red),
+        pixelrow(-1, -2..4, color-peach),
+        pixelrow(-2, -4 -3, color-brown),
+        pixelrow(-2, -2..1, color-peach),
+        pixelrow(-2, 2..5, color-black),
+        pixelrow(-3, -4 -2 -1, color-brown),
+        pixelrow(-3, -3 0 1 2 4 5 6, color-peach),
+        pixelrow(-3, 3, color-black),
+        pixelrow(-4, -4 -2, color-brown),
+        pixelrow(-4, -3 -1 0 1 3 4 5, color-peach),
+        pixelrow(-4, 2, color-black),
+        pixelrow(-5, -3..-1, color-brown),
+        pixelrow(-5, 0 1 3, color-peach),
+        pixelrow(-5, 2, color-black),
+        pixelrow(-6, -3..5, color-red),
+        pixelrow(-7, -2..2, color-red),
+        pixelrow(1, -4 -3 -2 -1 2 3, color-red),
+        pixelrow(1, 0 1, color-blue),
+        pixelrow(2, -4..-2, color-red),
+        pixelrow(2, -1 0 2 3, color-blue),
+        pixelrow(2, 1, color-yellow),
+        pixelrow(3, -4..-1, color-red),
+        pixelrow(3, 0..3, color-blue),
+        pixelrow(4, -4..-2, color-red),
+        pixelrow(4, -1 0, color-peach),
+        pixelrow(4, 1..3, color-blue),
+        pixelrow(5, -3 1 2, color-blue),
+        pixelrow(5, -2, color-red),
+        pixelrow(5, -1 0, color-peach),
+        pixelrow(6, -2..0, color-blue),
+        pixelrow(6, 1..3, color-brown),
+        pixelrow(7, -2..1, color-brown)
