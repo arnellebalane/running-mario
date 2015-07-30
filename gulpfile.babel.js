@@ -5,10 +5,10 @@ import stylus from 'gulp-stylus';
 
 
 gulp.task('styles', () => {
-    return gulp.src('running-mario.styl')
+    return gulp.src('stylesheets/**/*.styl')
         .pipe(plumber())
         .pipe(stylus())
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('build/stylesheets/'));
 });
 
 
@@ -21,7 +21,7 @@ gulp.task('templates', () => {
 
 
 gulp.task('watch', () => {
-    gulp.watch('running-mario.styl', ['styles']);
+    gulp.watch('stylesheets/**/*.styl', ['styles']);
     gulp.watch('index.jade', ['templates']);
 });
 
