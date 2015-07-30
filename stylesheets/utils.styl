@@ -3,3 +3,17 @@
 
 pixel(x, y, color)
     (pixel-size * x) (pixel-size * y) 0 0 color
+
+
+pixels(coordinates, color)
+    _pixels = ()
+    for coordinate in coordinates
+        push(_pixels, join(' ', pixel(coordinate[0], coordinate[1], color)))
+    unquote(join(',', _pixels))
+
+
+pixelrow(row, offsets, color)
+    _pixels = ()
+    for offset in offsets
+        push(_pixels, join(' ', pixel(offset, row, color)))
+    unquote(join(',', _pixels))
