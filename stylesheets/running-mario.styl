@@ -21,6 +21,25 @@ body
     justify-content center
 
 
+button
+    opacity 0
+
+    &[data-speed="0"]:focus ~ .mario
+        animation none
+
+    &[data-speed="1000"]:focus ~ .mario
+        animation-duration 1000ms
+
+    &[data-speed="750"]:focus ~ .mario
+        animation-duration 750ms
+
+    &[data-speed="500"]:focus ~ .mario
+        animation-duration 500ms
+
+    &[data-speed="250"]:focus ~ .mario
+        animation-duration 250ms
+
+
 mario-frame-one = pixelrow(0, -3..2, color-red),
     pixelrow(-1, -2..4, color-peach),
     pixelrow(-2, -4 -3, color-brown),
@@ -128,7 +147,7 @@ mario-frame-three = pixelrow(0, -7 -6 6 7 8, color-peach),
 .mario
     width pixel-size
     height pixel-size
-    background-color color-red
+    background-color color-blue
     box-shadow mario-frame-one
     animation running-mario 1000ms steps(1) infinite
     margin-left: 0
