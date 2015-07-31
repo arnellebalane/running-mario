@@ -22,6 +22,7 @@ body
 
 
 button
+    position absolute
     opacity 0
 
     &[data-speed="0"]:focus ~ .mario
@@ -150,7 +151,6 @@ mario-frame-three = pixelrow(0, -7 -6 6 7 8, color-peach),
     background-color color-blue
     box-shadow mario-frame-one
     animation running-mario 1000ms steps(1) infinite
-    margin-left: 0
 
 
 @keyframes running-mario
